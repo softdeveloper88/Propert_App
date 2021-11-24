@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.propert_app">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.    READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Propert_App">
+        <activity
+            android:name=".activity.AddPropertyDescription"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddPropertyThreeActivity"
+            android:exported="false" />
+        <activity android:name=".activity.EditUserProfileActivity" />
+        <activity android:name=".activity.UserProfileActivity" />
+        <activity android:name=".activity.ScreenThirtyOneActivity" />
+        <activity android:name=".activity.ScreenThirtyActivity" />
+        <activity android:name=".activity.ScreenTwentyNineActivity" />
+        <activity android:name=".activity.ScreenTwentyEgihtActivity" />
+        <activity android:name=".activity.ScreenTwentySevenActivity" />
+        <activity android:name=".activity.PendingPropertyListActivity" />
+        <activity android:name=".activity.ScreenTwentyFiveActivity" />
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.AddPropertyCompleteActivity" />
+        <activity android:name=".activity.ScreenTwentyTwoActivity" />
+        <activity android:name=".activity.ScreenTwentyOneActivity" />
+        <activity android:name=".activity.ScreenTwentyActivity" />
+        <activity android:name=".activity.AddPropertyImageActivity" />
+        <activity android:name=".activity.AddPropertyTwoActivity" />
+        <activity android:name=".activity.AddPropertyOneActivity" />
+        <activity android:name=".activity.ScreenSixteenActivity" />
+        <activity android:name=".activity.SelectUserActivity" />
+        <activity android:name=".activity.ScreenFourteenActivity" />
+        <activity android:name=".activity.ScreenThirteenActivity" />
+        <activity android:name=".activity.ScreenTwelveActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAXhBdyKxUo_cb-EkSgWJQTdqR0QjLcqes" />
+
+        <activity android:name=".activity.PropertyOnMapActivity" />
+        <activity android:name=".activity.MortageCalculatorActivity" />
+        <activity android:name=".activity.ScreenSevenActivity" />
+        <activity android:name=".activity.PropertyDetailsActivity" />
+        <activity android:name=".activity.FindAgentActivity" />
+        <activity android:name=".activity.PropertTypeActivity" />
+        <activity android:name=".activity.DashboardActivity" />
+        <activity android:name=".activity.SignUpActivity" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraint_layout27ss"
+    tools:context=".activity.ScreenTwentySevenActivity">
+    <LinearLayout
+        android:id="@+id/linear_layout27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="16dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/arrow_11"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_doted_line"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout27a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout27"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout27"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circular_image"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/profile"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/circular_image"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Angelina Jora"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Featured Agent"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/constraint_layout27"
+                app:layout_constraintHorizontal_bias="0.444"
+
+                app:layout_constraintLeft_toLeftOf="@id/circular_image"
+                app:layout_constraintRight_toRightOf="@id/circular_image"
+                app:layout_constraintTop_toTopOf="@id/constraint_layout27"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/badges_1"
+                tools:ignore="VectorDrawableCompat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="About"
+            android:id="@+id/txt_about"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+
+            android:weightSum="2">
+            <TextView
+                android:layout_weight="1.8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/email_1"
+                android:gravity="center_vertical"
+                android:layout_marginTop="2dp"/>
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Angelina@business.com"
+                android:textSize="14dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16sp"
+            android:layout_marginLeft="16dp"
+            android:weightSum="2">
+            <TextView
+                android:layout_weight="1.8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pin2_1" />
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surabaya,Indonesia"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textStyle="normal"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16sp"
+            android:weightSum="2">
+            <TextView
+                android:layout_weight="1.8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pin2_1" />
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Loerum ipsum dolor sit amet,consectutur\nadapiscing elit.Donec viverra quam ac lectus\nluctus tincidunt. "
+                android:textSize="14dp"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16sp"
+            android:layout_marginRight="16sp"
+            android:layout_marginLeft="16sp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:background="@drawable/call"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:background="@drawable/message">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/view27"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="16sp"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout27a"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/line"/>
+
+    <TextView
+        android:id="@+id/txt_listing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/view27"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16sp"
+        android:textStyle="bold"
+        android:text="Angelina jora Listing"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    <LinearLayout
+        android:id="@+id/linear_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/txt_listing"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout27"
+            app:tabTextAppearance="@style/MyCustomTabText"
+            android:layout_width="250dp"
+
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@color/blue"
+            app:tabTextColor="@color/black"
+            app:tabIndicatorColor="@color/blue"
+            android:weightSum="2">
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabitem_for_sale"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For Sale(2)"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabitem_for_rent"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For Rent(9)"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager27"
+        android:layout_width="393dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="16sp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_tablayout">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

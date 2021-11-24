@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ScreenTwentyEgihtActivity">
+    <LinearLayout
+        android:id="@+id/layout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        android:weightSum="2">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:iconifiedByDefault="true"
+            android:animateLayoutChanges="true"
+            app:queryHint="Messages"
+            android:layoutDirection="rtl"
+            app:queryBackground="@android:color/transparent"/>
+        <ImageView
+            android:id="@+id/imageview_dotedline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:scaleType="fitEnd"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/more_menu_1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/layout12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightblackcolor"/>
+        <include layout="@layout/row_design_screentwentyeight"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16sp"
+            android:background="@color/lightblackcolor"/>
+        <include layout="@layout/row_design_screentwentyeight"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16sp"
+            android:background="@color/lightblackcolor"/>
+        <include layout="@layout/row_design_screentwentyeight"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16sp"
+            android:background="@color/lightblackcolor"/>
+        <include layout="@layout/row_design_screentwentyeight"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16sp"
+            android:background="@color/lightblackcolor"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

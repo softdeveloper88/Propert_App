@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ScreenThirteenActivity">
+    <LinearLayout
+        android:id="@+id/linearlayout_13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/rectangle_1577"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_11"
+            android:layout_weight="0.8"
+            android:layout_gravity="center_vertical">
+
+        </ImageView>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Real estate News"
+            android:textSize="14sp"
+            android:layout_weight="0.5"
+            android:paddingLeft="12sp">
+        </TextView>
+    </LinearLayout>
+        <com.denzcoskun.imageslider.ImageSlider
+            app:layout_constraintTop_toBottomOf="@id/linearlayout_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/slider_image"
+            app:placeholder="@drawable/image_3"
+            android:layout_width="match_parent"
+            app:error_image="@drawable/image_13"
+            android:layout_height="170dp"
+            app:delay="1000"
+            app:period="1000"
+            app:corner_radius="2">
+
+        </com.denzcoskun.imageslider.ImageSlider>
+
+    <TextView
+        android:id="@+id/property_news"
+        app:layout_constraintTop_toTopOf="@id/slider_image"
+        app:layout_constraintLeft_toLeftOf="@id/slider_image"
+        android:layout_margin="8dp"
+        android:background="@drawable/rectangle_1630"
+       android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Propert News"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_marginTop="16sp"
+        android:layout_width="wrap_content"
+        app:tabMode="auto"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/slider_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:tabTextColor="@color/black"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabIndicatorColor="@color/blue">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/all"
+            app:tabTextAppearance="@style/MyCustomTabText"
+            android:text="All"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_property_news"
+            app:tabTextAppearance="@style/MyCustomTabText"
+            android:text="Property News"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_finance"
+            app:tabTextAppearance="@style/MyCustomTabText"
+            android:text="Finance"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabTextAppearance="@style/MyCustomTabText"
+            android:id="@+id/tab_tips"
+            android:text="Tips"/>
+
+    </com.google.android.material.tabs.TabLayout>
+    <View
+        android:id="@+id/view13"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tablayout"
+        app:layout_constraintBottom_toTopOf="@id/viewpager13"
+        android:background="@color/black">
+    </View>
+   <androidx.viewpager.widget.ViewPager
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/viewpager13"
+       android:layout_marginTop="8dp"
+       app:layout_constraintTop_toBottomOf="@id/view13"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent">
+
+   </androidx.viewpager.widget.ViewPager>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

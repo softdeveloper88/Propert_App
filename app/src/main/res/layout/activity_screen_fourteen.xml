@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ScreenFourteenActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/cardview_light_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_margin="16dp"
+                    android:padding="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_weight="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/arrow_11"/>
+                    <TextView
+                        android:layout_weight="0.7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/share_1"/>
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableRight="@drawable/ic_baseline_doted_line"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apartment Price Down.The \nRight Time To Buy"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp">
+
+                <TextView
+                    android:id="@+id/txt_property_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Property News"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:padding="8dp"
+                    android:textStyle="normal"
+                    android:background="@drawable/rectangle_1630"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/2/2013"
+                    android:textSize="10dp"
+                    android:drawableLeft="@drawable/date_1"
+                    android:layout_marginLeft="16sp"
+                    android:padding="5sp"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_9"
+                android:layout_marginTop="10dp">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected"
+                android:textSize="16dp"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:padding="5sp"
+                android:textStyle="normal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected"
+                android:textSize="16dp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:textColor="@color/black"
+                android:padding="5sp"
+                android:textStyle="normal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected"
+                android:textSize="16dp"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:padding="5sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Tags"
+                android:justificationMode="inter_word"
+                android:layout_marginLeft="16sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/grey_60"
+                android:padding="5sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="Propert News"
+                    android:background="@drawable/rectangle_1651"
+                    android:textColor="@color/black"
+                    android:padding="5sp"
+                    android:gravity="center"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/rectangle_1651"
+                    android:text="Property"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:padding="5sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:text="News"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/rectangle_1651"
+                    android:textColor="@color/black"
+                    android:padding="5sp"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/line"
+                />
+            <include layout="@layout/row_design_screen_fourteen"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

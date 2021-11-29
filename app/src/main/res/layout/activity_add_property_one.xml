@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.AddPropertyOneActivity">
+    tools:context=".activity.add_property.AddPropertyOneActivity">
 
     <LinearLayout
         android:id="@+id/linear_layout_1"
@@ -135,7 +135,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/rectangle_1663"
                 android:gravity="center"
-                android:text="Property"
+                android:text="Property Post"
                 android:textAllCaps="true"
                 android:textColor="@color/blue"
                 android:textSize="12dp"
@@ -150,7 +150,7 @@
                 android:background="@drawable/rectangle_1664"
                 android:gravity="center"
                 android:padding="16sp"
-                android:text="Others"
+                android:text="Others Post"
                 android:textAllCaps="true"
                 android:textSize="12dp"
                 android:textStyle="bold" />

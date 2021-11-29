@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.propert_app.R;
+import com.example.propert_app.activity.user.SignUpActivity;
 
 public class MainActivity extends AppCompatActivity {
     LinearLayout linearLayout_google,linearLayout_facebook;
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         txt_sign_up_here.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,SignUpActivity.class));
+                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
                 finish();
             }
         });

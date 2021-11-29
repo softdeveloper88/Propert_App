@@ -1,4 +1,4 @@
-package com.example.propert_app.fragments;
+package com.example.propert_app.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

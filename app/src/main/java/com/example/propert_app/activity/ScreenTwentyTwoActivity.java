@@ -10,6 +10,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.propert_app.R;
+import com.example.propert_app.activity.add_property.AddPropertyCompleteActivity;
 
 public class ScreenTwentyTwoActivity extends AppCompatActivity {
     private ProgressBar progressBar;

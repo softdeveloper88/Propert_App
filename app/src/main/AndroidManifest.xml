@@ -15,13 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Propert_App">
         <activity
-            android:name=".activity.AddPropertyDescription"
+            android:name=".activity.add_property.AddPropertyDescription"
             android:exported="false" />
         <activity
-            android:name=".activity.AddPropertyThreeActivity"
+            android:name=".activity.add_property.AddPropertyThreeActivity"
             android:exported="false" />
-        <activity android:name=".activity.EditUserProfileActivity" />
-        <activity android:name=".activity.UserProfileActivity" />
+        <activity android:name=".activity.user.EditUserProfileActivity" />
+        <activity android:name=".activity.user.UserProfileActivity" />
         <activity android:name=".activity.ScreenThirtyOneActivity" />
         <activity android:name=".activity.ScreenThirtyActivity" />
         <activity android:name=".activity.ScreenTwentyNineActivity" />
@@ -30,15 +30,15 @@
         <activity android:name=".activity.PendingPropertyListActivity" />
         <activity android:name=".activity.ScreenTwentyFiveActivity" />
         <activity android:name=".activity.NotificationActivity" />
-        <activity android:name=".activity.AddPropertyCompleteActivity" />
+        <activity android:name=".activity.add_property.AddPropertyCompleteActivity" />
         <activity android:name=".activity.ScreenTwentyTwoActivity" />
         <activity android:name=".activity.ScreenTwentyOneActivity" />
         <activity android:name=".activity.ScreenTwentyActivity" />
-        <activity android:name=".activity.AddPropertyImageActivity" />
-        <activity android:name=".activity.AddPropertyTwoActivity" />
-        <activity android:name=".activity.AddPropertyOneActivity" />
+        <activity android:name=".activity.add_property.AddPropertyImageActivity" />
+        <activity android:name=".activity.add_property.AddPropertyTwoActivity" />
+        <activity android:name=".activity.add_property.AddPropertyOneActivity" />
         <activity android:name=".activity.ScreenSixteenActivity" />
-        <activity android:name=".activity.SelectUserActivity" />
+        <activity android:name=".activity.user.SelectUserActivity" />
         <activity android:name=".activity.ScreenFourteenActivity" />
         <activity android:name=".activity.ScreenThirteenActivity" />
         <activity android:name=".activity.ScreenTwelveActivity" />
@@ -52,9 +52,9 @@
         <activity android:name=".activity.ScreenSevenActivity" />
         <activity android:name=".activity.PropertyDetailsActivity" />
         <activity android:name=".activity.FindAgentActivity" />
-        <activity android:name=".activity.PropertTypeActivity" />
+        <activity android:name=".activity.PropertyFilterActivity" />
         <activity android:name=".activity.DashboardActivity" />
-        <activity android:name=".activity.SignUpActivity" />
+        <activity android:name=".activity.user.SignUpActivity" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

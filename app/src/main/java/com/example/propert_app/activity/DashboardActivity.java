@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.propert_app.activity.user.MyFovritesActivity;
 import com.example.propert_app.fragments.HomeFragments;
 import com.example.propert_app.fragments.ProfileFragment;
 import com.example.propert_app.R;

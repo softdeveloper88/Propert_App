@@ -1,4 +1,4 @@
-package com.example.propert_app.activity;
+package com.example.propert_app.activity.user;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.propert_app.R;
+import com.example.propert_app.activity.ScreenSixteenActivity;
 
 public class SelectUserActivity extends AppCompatActivity {
     LinearLayout  linearlayout_1, linearlayout_2, linearlayout_3;
@@ -26,7 +27,7 @@ public class SelectUserActivity extends AppCompatActivity {
         btn_continue1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SelectUserActivity.this,ScreenSixteenActivity.class));
+                startActivity(new Intent(SelectUserActivity.this, ScreenSixteenActivity.class));
             }
         });
         linearlayout_1.setOnClickListener(new View.OnClickListener() {

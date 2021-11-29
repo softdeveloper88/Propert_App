@@ -1,4 +1,4 @@
-package com.example.propert_app.activity;
+package com.example.propert_app.activity.user;
 
 import androidx.appcompat.app.AppCompatActivity;
 

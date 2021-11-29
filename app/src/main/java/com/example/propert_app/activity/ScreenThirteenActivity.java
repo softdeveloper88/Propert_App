@@ -10,7 +10,8 @@ import android.widget.TextView;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
-import com.example.propert_app.fragments.PageAdapter_13;
+import com.example.propert_app.activity.user.SelectUserActivity;
+import com.example.propert_app.adapter.PageAdapter_13;
 import com.example.propert_app.R;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;

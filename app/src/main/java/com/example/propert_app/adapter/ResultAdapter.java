@@ -1,4 +1,4 @@
-package com.example.propert_app.fragments;
+package com.example.propert_app.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

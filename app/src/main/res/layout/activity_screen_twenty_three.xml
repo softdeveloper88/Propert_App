@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.AddPropertyCompleteActivity">
+    tools:context=".activity.add_property.AddPropertyCompleteActivity">
 
     <LinearLayout
         android:id="@+id/linear_layout23"

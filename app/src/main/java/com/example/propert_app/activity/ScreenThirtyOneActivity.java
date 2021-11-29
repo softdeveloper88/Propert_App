@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.propert_app.R;
+import com.example.propert_app.activity.user.UserProfileActivity;
 
 public class ScreenThirtyOneActivity extends AppCompatActivity {
     Button btn_screen31;

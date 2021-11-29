@@ -1,14 +1,18 @@
-package com.example.propert_app.fragments;
+package com.example.propert_app.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.propert_app.fragments.AllFragments;
+import com.example.propert_app.fragments.Finance_Fragment;
+import com.example.propert_app.fragments.Property_news_Fragment;
+import com.example.propert_app.fragments.Tip_Fragment;
+
 import org.jetbrains.annotations.NotNull;
 
-public class
-PageAdapter_13 extends FragmentPagerAdapter {
+public class PageAdapter_13 extends FragmentPagerAdapter {
     int tabcount;
     public PageAdapter_13(@NonNull @NotNull FragmentManager fm, int behavior) {
         super(fm, behavior);

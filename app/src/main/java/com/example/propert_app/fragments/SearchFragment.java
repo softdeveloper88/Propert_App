@@ -12,7 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.propert_app.R;
-import com.example.propert_app.activity.PropertTypeActivity;
+import com.example.propert_app.activity.PropertyFilterActivity;
+import com.example.propert_app.adapter.ResultAdapter;
 
 import java.util.ArrayList;
 
@@ -36,7 +37,7 @@ public class SearchFragment extends Fragment {
         filter_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), PropertTypeActivity.class));
+                startActivity(new Intent(getContext(), PropertyFilterActivity.class));
             }
         });
         recyclerView1.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));

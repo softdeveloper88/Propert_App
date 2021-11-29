@@ -1,4 +1,4 @@
-package com.example.propert_app.activity;
+package com.example.propert_app.activity.add_property;
 
 import android.os.Bundle;
 import android.text.Editable;

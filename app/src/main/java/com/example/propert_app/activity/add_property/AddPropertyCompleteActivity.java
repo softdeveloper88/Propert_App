@@ -1,4 +1,4 @@
-package com.example.propert_app.activity;
+package com.example.propert_app.activity.add_property;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.propert_app.R;
+import com.example.propert_app.activity.NotificationActivity;
 
 public class AddPropertyCompleteActivity extends AppCompatActivity {
     Button btn_submit_listing23;

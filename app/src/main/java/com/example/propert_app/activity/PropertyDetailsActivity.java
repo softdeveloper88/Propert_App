@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.propert_app.R;
+import com.example.propert_app.activity.user.MyFovritesActivity;
 import com.example.propert_app.adapter.ScreenEightAdapter;
 
 import java.util.ArrayList;

@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.propert_app.R;
-import com.example.propert_app.activity.AddPropertyOneActivity;
+import com.example.propert_app.activity.add_property.AddPropertyOneActivity;
 import com.example.propert_app.adapter.CategoryAdapter;
 import com.example.propert_app.adapter.HorizontalAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

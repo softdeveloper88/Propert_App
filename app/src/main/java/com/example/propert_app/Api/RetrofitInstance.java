@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public  class  RetrofitInstance {
 
-   private static final String BASE_URL = "http://howmobile.howapp.me";
+   private static final String BASE_URL = "http://admin.keystonemarketingltd.com/api/";
    private static final String BASE_URL1 = "http://howmobile.howapp.me";
    private static final String BASE_URL2 = "https://firebasedynamiclinks.googleapis.com";
    private static Retrofit retrofit;

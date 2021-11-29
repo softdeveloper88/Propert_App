@@ -1,4 +1,4 @@
-package com.example.propert_app.activity;
+package com.example.propert_app.activity.user;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.propert_app.R;
+import com.example.propert_app.activity.MortageCalculatorActivity;
 import com.example.propert_app.adapter.ScreenNineAdapter;
 
 import java.util.ArrayList;

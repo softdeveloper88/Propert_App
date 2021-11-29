@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.example.propert_app.R;
 
-public class PropertTypeActivity extends AppCompatActivity {
+public class PropertyFilterActivity extends AppCompatActivity {
     TextView for_rent,for_sale,txt_house,txt_apartments,txt_commercial,txt_villa,
              txt_condominuim,txt_penthouse,txt_bedroom1,txt_bedroom2,txt_bedroom3,txt_bedroom4
             ,txt_bathroom1,txt_bathroom2,txt_bathroom3,txt_bathroom4;
@@ -25,7 +25,7 @@ public class PropertTypeActivity extends AppCompatActivity {
         btn_show_properties.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(PropertTypeActivity.this, FindAgentActivity.class));
+                startActivity(new Intent(PropertyFilterActivity.this, FindAgentActivity.class));
             }
         });
         txt_house.setOnClickListener(new View.OnClickListener() {

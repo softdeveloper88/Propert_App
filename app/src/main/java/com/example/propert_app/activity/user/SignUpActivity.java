@@ -1,4 +1,4 @@
-package com.example.propert_app.activity;
+package com.example.propert_app.activity.user;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.propert_app.R;
+import com.example.propert_app.activity.MainActivity;
 
 public class SignUpActivity extends AppCompatActivity {
     TextView txt_sign_in_here;
@@ -20,7 +21,7 @@ public class SignUpActivity extends AppCompatActivity {
         txt_sign_in_here.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SignUpActivity.this,MainActivity.class));
+                startActivity(new Intent(SignUpActivity.this, MainActivity.class));
                 finish();
             }
         });

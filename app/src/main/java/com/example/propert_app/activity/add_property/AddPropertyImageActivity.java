@@ -1,4 +1,4 @@
-package com.example.propert_app.activity;
+package com.example.propert_app.activity.add_property;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,29 +10,28 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.propert_app.R;
+import com.example.propert_app.activity.ScreenTwentyActivity;
 
-public class AddPropertyTwoActivity extends AppCompatActivity {
+public class AddPropertyImageActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private int say=0;
-    TextView text_view,txt_liveScore;
-    Button btn_next_step;
-
+    TextView text_view;
+    Button btn_upload_images;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_property_two);
+        setContentView(R.layout.activity_add_property_image);
         progressBar=findViewById(R.id.progress2);
-        btn_next_step=findViewById(R.id.btn_next_step);
-
         text_view=findViewById(R.id.text_view);
-        txt_liveScore=findViewById(R.id.txt_liveScore);
-        btn_next_step.setOnClickListener(new View.OnClickListener() {
+        btn_upload_images=findViewById(R.id.btn_upload_images);
+        btn_upload_images.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AddPropertyTwoActivity.this, AddPropertyThreeActivity.class));
+                startActivity(new Intent(AddPropertyImageActivity.this, ScreenTwentyActivity.class));
             }
         });
+
         progressBar.setMax(100);
         progressBar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,4 +42,5 @@ public class AddPropertyTwoActivity extends AppCompatActivity {
             }
         });
     }
+
 }

@@ -135,6 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="16sp"
                     android:orientation="horizontal"
+                    android:visibility="gone"
                     android:weightSum="2">
 
                     <TextView
@@ -222,6 +223,7 @@
                     android:layout_margin="16sp"
                     android:layout_marginTop="10dp"
                     android:outlineSpotShadowColor="@color/blue"
+                   android:visibility="gone"
                     android:scrollbarSize="12dp"
                     android:theme="@style/Widget.AppCompat.SeekBar">
 
@@ -242,7 +244,8 @@
                         android:textSize="14sp"
                         android:textStyle="normal" />
 
-                    <Switch
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchNegotiableRS"
                         style="@style/TextAppearance.AppCompat.Widget.Switch"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -297,6 +300,7 @@
                         android:weightSum="3">
 
                         <TextView
+                            android:id="@+id/bedroomDecrement"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -307,6 +311,7 @@
                             android:textStyle="normal" />
 
                         <TextView
+                            android:id="@+id/bedroomIncrementValue"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -317,6 +322,7 @@
                             android:textStyle="normal" />
 
                         <TextView
+                            android:id="@+id/bedroomIncrement"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -359,6 +365,7 @@
                         android:weightSum="3">
 
                         <TextView
+                            android:id="@+id/bathroomDecrement"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -369,6 +376,7 @@
                             android:textStyle="normal" />
 
                         <TextView
+                            android:id="@+id/bathroomIncrementValue"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -379,6 +387,7 @@
                             android:textStyle="normal" />
 
                         <TextView
+                            android:id="@+id/bathroomIncrement"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -421,6 +430,7 @@
                         android:weightSum="3">
 
                         <TextView
+                            android:id="@+id/floorDecrement"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -431,6 +441,7 @@
                             android:textStyle="normal" />
 
                         <TextView
+                            android:id="@+id/floorDecrementValue"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -441,6 +452,7 @@
                             android:textStyle="normal" />
 
                         <TextView
+                            android:id="@+id/floorIncrement"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -856,7 +868,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_next_step"
+                android:id="@+id/btn_next_stepTwo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Next Step"

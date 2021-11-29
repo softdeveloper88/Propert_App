@@ -18,6 +18,8 @@ public class AddPropertyOneActivity extends AppCompatActivity {
     TextView text_view,sell_listing,rent_listing;
     Button btn_next_step;
 
+    String postType;
+
 
 
     @Override

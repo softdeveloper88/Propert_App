@@ -1,9 +1,19 @@
 package com.example.propert_app.Api;
 
+import com.example.propert_app.model.AgentModel;
+import com.example.propert_app.model.MyFavoriteModel;
+
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Query;
+
 public interface Api {
 
-//    @GET("/api/posts")
-//    Call<Post> getAllPost();
+    @GET("agents")
+    Call<AgentModel> getAllAgents();
+
+    @GET("favorites")
+    Call<MyFavoriteModel> getFavorite(@Query("user_id") String user_id);
 //
 //    @POST("/api/posts")
 //    Call<Post> addNewPost(@Body NewPostModel body);
@@ -18,9 +28,8 @@ public interface Api {
 //    @POST("/api/Feedback")
 //    Call<Object> addFeedback(@Body AddFeedback body);
 //
-//    @GET("/api/Feedback")
-//    Call<Feedback> showFeedback(@Query("commentId") String commentId);
-//
+
+
 //    @POST("/api/users/login")
 //    Call<UserData> login(@Body LoginModel body);
 //

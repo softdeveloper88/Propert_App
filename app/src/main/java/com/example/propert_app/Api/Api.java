@@ -1,6 +1,7 @@
 package com.example.propert_app.Api;
 
 import com.example.propert_app.model.AgentModel;
+import com.example.propert_app.model.HomeModel;
 import com.example.propert_app.model.MyFavoriteModel;
 
 import retrofit2.Call;
@@ -14,6 +15,11 @@ public interface Api {
 
     @GET("favorites")
     Call<MyFavoriteModel> getFavorite(@Query("user_id") String user_id);
+
+    @GET("home")
+    Call<HomeModel> getHomeData();
+
+
 //
 //    @POST("/api/posts")
 //    Call<Post> addNewPost(@Body NewPostModel body);

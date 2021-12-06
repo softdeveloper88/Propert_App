@@ -24,6 +24,7 @@
                 android:id="@+id/home_image"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
+                android:scaleType="fitXY"
                 android:src="@drawable/home"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -80,33 +81,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/home_image">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="&amp;"
-                    android:textColor="@color/blue" />
-
-                <TextView
+                    android:id="@+id/tv_price_range"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="100k"
-                    android:textColor="@color/blue" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="-"
-                    android:textColor="@color/blue" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="&amp;"
-                    android:textColor="@color/blue" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1M"
                     android:textColor="@color/blue" />
 
             </LinearLayout>

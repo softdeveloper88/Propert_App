@@ -64,6 +64,7 @@
                 app:layout_constraintTop_toBottomOf="@id/linearLayout_s">
 
                 <TextView
+                    android:id="@+id/tv_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Darga Mawijaya Tower Surbaya"
@@ -82,15 +83,15 @@
 
             </LinearLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view_screen_eight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <com.denzcoskun.imageslider.ImageSlider
+                app:layout_constraintTop_toBottomOf="@id/linearlayout_13"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/linearLayout_s1">
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
 
-            </androidx.recyclerview.widget.RecyclerView>
+            </com.denzcoskun.imageslider.ImageSlider>
 
             <LinearLayout
                 android:id="@+id/linearLayout_s2"
@@ -102,7 +103,7 @@
                 android:weightSum="2"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/recycler_view_screen_eight">
+                app:layout_constraintTop_toBottomOf="@id/slider_image">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -118,6 +119,7 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:id="@+id/tv_price"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="$340,000"
@@ -135,6 +137,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/tv_price_month"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/layer_2_1s"
@@ -187,6 +190,7 @@
                         android:src="@drawable/group_885"></ImageView>
 
                     <TextView
+                        android:id="@+id/tv_bedroom"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -211,6 +215,7 @@
                     </ImageView>
 
                     <TextView
+                        android:id="@+id/tv_bathroom"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -233,6 +238,7 @@
                         android:src="@drawable/group_885"></ImageView>
 
                     <TextView
+                        android:id="@+id/tv_area"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -274,6 +280,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5sp"
@@ -307,6 +314,7 @@
                 app:layout_constraintTop_toBottomOf="@id/txt_feature">
 
                 <TextView
+                    android:id="@+id/ic_parking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -317,9 +325,11 @@
                     android:text="Parking"
                     android:textColor="@color/black"
                     android:textSize="12sp"
-                    android:textStyle="normal" />
+                    android:textStyle="normal"
+                    android:visibility="gone" />
 
                 <TextView
+                    android:id="@+id/ic_security"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -330,9 +340,11 @@
                     android:text="Security"
                     android:textColor="@color/black"
                     android:textSize="12sp"
-                    android:textStyle="normal" />
+                    android:textStyle="normal"
+                    android:visibility="gone" />
 
                 <TextView
+                    android:id="@+id/ic_balcony"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -343,7 +355,8 @@
                     android:text="Balcony"
                     android:textColor="@color/black"
                     android:textSize="12sp"
-                    android:textStyle="normal" />
+                    android:textStyle="normal"
+                    android:visibility="gone" />
 
 
             </LinearLayout>
@@ -359,6 +372,7 @@
                 android:weightSum="3">
 
                 <TextView
+                    android:id="@+id/ic_pool"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -369,9 +383,11 @@
                     android:text="Pool"
                     android:textColor="@color/black"
                     android:textSize="12sp"
-                    android:textStyle="normal" />
+                    android:textStyle="normal"
+                    android:visibility="gone" />
 
                 <TextView
+                    android:id="@+id/ic_ac"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -382,20 +398,23 @@
                     android:text="AC"
                     android:textColor="@color/black"
                     android:textSize="12sp"
-                    android:textStyle="normal" />
+                    android:textStyle="normal"
+                    android:visibility="gone" />
 
                 <TextView
+                    android:id="@+id/ic_cctv"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:drawableLeft="@drawable/group_913"
 
+                    android:drawableLeft="@drawable/group_913"
                     android:drawablePadding="4dp"
                     android:gravity="center_vertical"
                     android:text="CCTV"
                     android:textColor="@color/black"
                     android:textSize="12sp"
-                    android:textStyle="normal" />
+                    android:textStyle="normal"
+                    android:visibility="gone" />
             </LinearLayout>
 
             <TextView
@@ -430,6 +449,7 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:id="@+id/tv_type"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="For Sale"
@@ -453,6 +473,7 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:id="@+id/tv_electrice_watt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="2200 watt"
@@ -486,6 +507,7 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:id="@+id/tv_property_type"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Condominium"
@@ -509,6 +531,7 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:id="@+id/tv_price_area"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="$1231"
@@ -565,6 +588,7 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:id="@+id/tv_size_area"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1100 sqft"
@@ -598,6 +622,7 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:id="@+id/tv_furniture"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Furnised"
@@ -621,6 +646,7 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:id="@+id/tv_floor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mid Level"
@@ -643,6 +669,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tv_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16sp"
@@ -650,19 +677,17 @@
                 android:text="Dukuh Pakis,Dukuh Pakis Surabaya"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/google_map_03"
-                android:layout_marginBottom="20sp"
-                android:layout_marginTop="20sp">
-
-            </ImageView>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.2dp"
                 android:background="@color/lightblack" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"

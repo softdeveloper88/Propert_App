@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.propert_app.activity.user.SelectUserActivity;
 import com.example.propert_app.adapter.PageAdapter_13;
@@ -35,11 +36,11 @@ public class ScreenThirteenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_screen_thirteen);
        init();
         List<SlideModel> slideModels=new ArrayList<>();
-        slideModels.add(new SlideModel(R.drawable.image_15,"Apartment price down.The right time to Buy"));
-        slideModels.add(new SlideModel(R.drawable.image_14,"Apartment price down.The right time to Buy"));
-        slideModels.add(new SlideModel(R.drawable.image_13,"Apartment price down.The right time to Buy"));
-        slideModels.add(new SlideModel(R.drawable.image_12,"Apartment price down.The right time to Buy"));
-        imageSlider.setImageList(slideModels,true);
+        slideModels.add(new SlideModel(R.drawable.image_15,"Apartment price down.The right time to Buy", ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image_14,"Apartment price down.The right time to Buy", ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image_13,"Apartment price down.The right time to Buy", ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image_12,"Apartment price down.The right time to Buy", ScaleTypes.FIT));
+        imageSlider.setImageList(slideModels);
         pageAdapter13=new PageAdapter_13(getSupportFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(pageAdapter13);
 

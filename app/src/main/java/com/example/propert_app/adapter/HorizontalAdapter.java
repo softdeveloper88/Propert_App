@@ -15,16 +15,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.propert_app.activity.PropertyDetailsActivity;
 import com.example.propert_app.R;
+import com.example.propert_app.model.HomeModel;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class HorizontalAdapter  extends RecyclerView.Adapter<HorizontalAdapter.HorizontalViewHolder> {
 Context context;
-ArrayList<String> list;
+List<HomeModel.Property> list;
 
-    public HorizontalAdapter(Context context, ArrayList<String> list) {
+    public HorizontalAdapter(Context context, List<HomeModel.Property> list) {
         this.context = context;
         this.list = list;
     }
@@ -42,20 +45,25 @@ ArrayList<String> list;
      holder.cardView.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-             context.startActivity(new Intent(context, PropertyDetailsActivity.class));
+             context.startActivity(new Intent(context, PropertyDetailsActivity.class).putExtra("id",list.get(position).id));
          }
      });
+     holder.txt_cityname.setText(list.get(position).location);
+     holder.txt_residence.setText(list.get(position).name);
+         Picasso.get().load(list.get(position).attachments).into(holder.home);
+         holder.tv_price_range.setText("Rs "+list.get(position).minprice+" - Rs "+list.get(position).minprice);
+
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        return list.size();
     }
 
     public  class HorizontalViewHolder extends RecyclerView.ViewHolder {
         LinearLayout linearLayout;
         ImageView home;
-           TextView txt_residence,txt_cityname;
+           TextView txt_residence,txt_cityname,tv_price_range;
         CircleImageView profile_image,profile_image1,profile_image2;
         CardView cardView;
         public HorizontalViewHolder(@NonNull View itemView) {
@@ -63,6 +71,7 @@ ArrayList<String> list;
             linearLayout=itemView.findViewById(R.id.linearLayout3);
             home=itemView.findViewById(R.id.home_image);
             txt_residence=itemView.findViewById(R.id.txt_residence);
+            tv_price_range=itemView.findViewById(R.id.tv_price_range);
             txt_cityname=itemView.findViewById(R.id.txt_city);
             profile_image=itemView.findViewById(R.id.profile_image);
             profile_image1=itemView.findViewById(R.id.profile_image1);

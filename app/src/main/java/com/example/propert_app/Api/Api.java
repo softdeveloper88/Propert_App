@@ -1,9 +1,11 @@
 package com.example.propert_app.Api;
 
 import com.example.propert_app.model.AgentModel;
+import com.example.propert_app.model.CategoryModel;
 import com.example.propert_app.model.HomeModel;
 import com.example.propert_app.model.MyFavoriteModel;
 import com.example.propert_app.model.PropertyDetailModel;
+import com.example.propert_app.model.SubCategoryModel;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -22,6 +24,15 @@ public interface Api {
 
     @GET("property-details")
     Call<PropertyDetailModel> getPropertyDetails(@Query("property_id") int property_id);
+
+    @GET("categories")
+    Call<CategoryModel> getAllCategories();
+
+    @GET("sub-categories")
+    Call<SubCategoryModel> getSubCategoryData(@Query("category_id") int category_id);
+
+
+
 
 
 //

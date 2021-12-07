@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
@@ -40,6 +41,7 @@ public class HomeFragments extends Fragment {
     Button btn_list_property;
     RecyclerView rv_category,recyclerView;
     ImageSlider imageSlider;
+    LinearLayout loaderLayout;
     public HomeFragments() {
 
     }
@@ -60,6 +62,7 @@ public class HomeFragments extends Fragment {
          recyclerView = view.findViewById(R.id.recycler_view);
         rv_category = view.findViewById(R.id.rv_cateogry);
         imageSlider = view.findViewById(R.id.image_slider);
+        loaderLayout = view.findViewById(R.id.loaderLayot);
 
         List<SlideModel> imageList = new ArrayList<>();
         imageList.add(new SlideModel("https://bit.ly/2YoJ77H", ScaleTypes.FIT));
@@ -101,6 +104,7 @@ public class HomeFragments extends Fragment {
 
                 if (response.isSuccessful()) {
                     Log.d("response",response.toString());
+                    loaderLayout.setVisibility(View.GONE);
                     rv_category.setLayoutManager(new GridLayoutManager(getContext(), 4));
 
                     assert response.body() != null;
@@ -111,6 +115,7 @@ public class HomeFragments extends Fragment {
 
                     HorizontalAdapter adapter = new HorizontalAdapter(getContext(), response.body().data.properties);
                     recyclerView.setAdapter(adapter);
+
                 } else {
 
 

@@ -14,20 +14,27 @@ import com.example.propert_app.R;
 public class PropertyFilterActivity extends AppCompatActivity {
     TextView for_rent,for_sale,txt_house,txt_apartments,txt_commercial,txt_villa,
              txt_condominuim,txt_penthouse,txt_bedroom1,txt_bedroom2,txt_bedroom3,txt_bedroom4
-            ,txt_bathroom1,txt_bathroom2,txt_bathroom3,txt_bathroom4;
+            ,txt_bathroom1,txt_bathroom2,txt_bathroom3,txt_bathroom4,txt_for_property,txt_for_other;
     Button btn_show_properties;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_propert_type);
-        init();
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_propert_type);
+            init();
+            setListener();
+
+    }
+
+      void setListener(){
+
         btn_show_properties.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(PropertyFilterActivity.this, FindAgentActivity.class));
+                startActivity(new Intent(PropertyFilterActivity.this, AllPostActivity.class));
             }
         });
+
         txt_house.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,6 +99,7 @@ public class PropertyFilterActivity extends AppCompatActivity {
         for_sale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if (for_sale.isClickable()){
                     for_sale.setBackgroundResource(R.drawable.rectangle_1582);
                     for_rent.setBackgroundResource(R.drawable.rectangle_1583);
@@ -107,23 +115,52 @@ public class PropertyFilterActivity extends AppCompatActivity {
                 }
             }
         });
-        txt_bedroom1.setOnClickListener(new View.OnClickListener() {
-            private  boolean statechanged;
-            @Override
-            public void onClick(View v) {
-                if (statechanged){
-                    txt_bedroom1.setBackgroundResource(R.drawable.rectangle_1591saqi);
-                    txt_bedroom1.setTextColor(Color.WHITE);
-                }
-                else {
-                    txt_bedroom1.setBackgroundResource(R.drawable.rectangle_1591saq);
-                    txt_bedroom1.setTextColor(Color.BLACK);
-                }
-                statechanged=!statechanged;
+//          for_sale.setOnClickListener(new View.OnClickListener() {
+//              @Override
+//              public void onClick(View v) {
+//                  if (for_sale.isClickable()){
+//                      for_sale.setBackgroundResource(R.drawable.rectangle_1582);
+//                      for_rent.setBackgroundResource(R.drawable.rectangle_1583);
+//                  }
+//              }
+//          });
 
+          txt_for_property.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                  if (txt_for_property.isClickable()){
+                      txt_for_other.setBackgroundResource(R.drawable.rectangle_1583);
+                      txt_for_property.setBackgroundResource(R.drawable.rectangle_1582);
+                  }
+              }
+          });
+          txt_for_other.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                  if (txt_for_other.isClickable()){
+                      txt_for_property.setBackgroundResource(R.drawable.rectangle_1583);
+                      txt_for_other.setBackgroundResource(R.drawable.rectangle_1582);
+                  }
+              }
+          });
 
-            }
-        });
+//        txt_for_other.setOnClickListener(new View.OnClickListener() {
+//            private  boolean statechanged;
+//            @Override
+//            public void onClick(View v) {
+//                if (statechanged){
+//                    txt_bedroom1.setBackgroundResource(R.drawable.rectangle_1591saqi);
+//                    txt_bedroom1.setTextColor(Color.WHITE);
+//                }
+//                else {
+//                    txt_bedroom1.setBackgroundResource(R.drawable.rectangle_1591saq);
+//                    txt_bedroom1.setTextColor(Color.BLACK);
+//                }
+//                statechanged=!statechanged;
+//
+//
+//            }
+//        });
         txt_bedroom2.setOnClickListener(new View.OnClickListener() {
             private  boolean statechanged;
             @Override
@@ -244,10 +281,8 @@ public class PropertyFilterActivity extends AppCompatActivity {
             }
         });
 
-
-
-
     }
+
     public void init(){
         txt_house=findViewById(R.id.txt_house);
         txt_apartments=findViewById(R.id.txt_apartments);
@@ -257,6 +292,8 @@ public class PropertyFilterActivity extends AppCompatActivity {
         txt_penthouse=findViewById(R.id.txt_penthouse);
         for_rent=findViewById(R.id.txt_for_rent);
         for_sale=findViewById(R.id.txt_for_sale);
+        txt_for_property=findViewById(R.id.txt_for_property);
+        txt_for_other=findViewById(R.id.txt_for_other);
         btn_show_properties=findViewById(R.id.btn_show_properties);
         txt_bedroom1=findViewById(R.id.txt_bedroom1);
         txt_bedroom2=findViewById(R.id.txt_bedroom2);

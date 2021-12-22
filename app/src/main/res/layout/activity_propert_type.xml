@@ -27,12 +27,11 @@
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_margin="16dp"
                 android:weightSum="3">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/ic_baseline_close_24"/>
+                    android:scaleType="fitStart" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -42,14 +41,17 @@
                     android:gravity="center"
                     android:layout_weight="1"
                     android:textSize="16dp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reset"
-                    android:gravity="end"
-                    android:textColor="@color/black"
                     android:layout_weight="1"
-                    android:textSize="12dp"/>
+                    android:gravity="end"
+                    android:text="Reset"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
             <View
@@ -58,9 +60,67 @@
                 app:layout_constraintTop_toBottomOf="@id/layoutt"
                 android:layout_height="0.1sp"
                 android:background="@color/lightblackcolor"/>
-
             <LinearLayout
                 android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="16dp"
+                android:weightSum="2"
+                app:layout_constraintRight_toRightOf="parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filter For"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+
+                    android:textSize="16dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_for_property"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_1582"
+                        android:gravity="center"
+
+                        android:text=" Property"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txt_for_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_1583"
+                        android:gravity="center"
+                        android:text=" Other Post"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/linear2"
+                android:layout_height="0.1sp"
+                android:background="@color/lightblackcolor"/>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/view"
@@ -92,21 +152,24 @@
                         android:id="@+id/txt_for_sale"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="For Sale"
-                        android:gravity="center"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
                         android:background="@drawable/rectangle_1582"
-                        android:textSize="16dp"
+                        android:gravity="center"
 
-                        android:layout_weight="1"/>
+                        android:text="For Sale"
+                        android:textSize="16dp" />
+
                     <TextView
                         android:id="@+id/txt_for_rent"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="For Rent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
                         android:background="@drawable/rectangle_1583"
                         android:gravity="center"
-                        android:layout_weight="1"
-                        android:textSize="16dp"/>
+                        android:text="For Rent"
+                        android:textSize="16dp" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -138,37 +201,43 @@
                 android:layout_margin="16dp"
                 android:orientation="horizontal"
                 android:weightSum="3">
+
                 <TextView
                     android:id="@+id/txt_house"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="House"
-                    android:padding="8dp"
-                    android:gravity="center"
-                    android:textColor="@color/black"
+                    android:layout_margin="4dp"
                     android:layout_weight="1"
-                    android:textSize="12dp"/>
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="House"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
                 <TextView
                     android:id="@+id/txt_apartments"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Apartment"
-                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
                     android:background="@drawable/rectangle_1585"
                     android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Apartment"
                     android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:textSize="12dp"/>
+                    android:textSize="12dp" />
+
                 <TextView
                     android:id="@+id/txt_commercial"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Commercial"
-                    android:padding="8dp"
-                    android:gravity="center"
-                    android:textColor="@color/black"
+                    android:layout_margin="4dp"
                     android:layout_weight="1"
-                    android:textSize="12dp"/>
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Commercial"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
 
             </LinearLayout>
             <LinearLayout
@@ -181,37 +250,43 @@
                 android:layout_margin="16dp"
                 android:orientation="horizontal"
                 android:weightSum="3">
+
                 <TextView
                     android:id="@+id/txt_penthouse"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Penthouse"
-                    android:padding="8dp"
-                    android:gravity="center"
-                    android:textColor="@color/black"
+                    android:layout_margin="4dp"
                     android:layout_weight="1"
-                    android:textSize="12dp"/>
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Penthouse"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
                 <TextView
                     android:id="@+id/txt_condominuim"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Condominuim"
-                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
                     android:background="@drawable/rectangle_1585"
                     android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Condominuim"
                     android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:textSize="12dp"/>
+                    android:textSize="12dp" />
+
                 <TextView
                     android:id="@+id/txt_villa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Villa"
-                    android:padding="8dp"
-                    android:gravity="center"
-                    android:textColor="@color/black"
+                    android:layout_margin="4dp"
                     android:layout_weight="1"
-                    android:textSize="12dp"/>
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Villa"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
 
             </LinearLayout>
             <LinearLayout

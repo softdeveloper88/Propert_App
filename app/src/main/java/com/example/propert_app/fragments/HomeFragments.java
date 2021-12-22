@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
@@ -24,11 +25,14 @@ import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.propert_app.Api.Api;
 import com.example.propert_app.Api.RetrofitInstance;
 import com.example.propert_app.R;
-import com.example.propert_app.activity.add_property.AddPropertyOneActivity;
+import com.example.propert_app.activity.AllCategoryActivity;
+import com.example.propert_app.activity.AllPostActivity;
+import com.example.propert_app.activity.AllProperties;
+import com.example.propert_app.activity.FindAgentActivity;
+import com.example.propert_app.activity.PropertyFilterActivity;
 import com.example.propert_app.adapter.CategoryAdapter;
 import com.example.propert_app.adapter.HorizontalAdapter;
 import com.example.propert_app.model.HomeModel;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,10 +42,11 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class HomeFragments extends Fragment {
-    Button btn_list_property;
+    Button btnFindAgents;
     RecyclerView rv_category,recyclerView;
     ImageSlider imageSlider;
     LinearLayout loaderLayout;
+    TextView seeAllCategories,seeAllProperties;
     public HomeFragments() {
 
     }
@@ -63,7 +68,24 @@ public class HomeFragments extends Fragment {
         rv_category = view.findViewById(R.id.rv_cateogry);
         imageSlider = view.findViewById(R.id.image_slider);
         loaderLayout = view.findViewById(R.id.loaderLayot);
+        seeAllCategories = view.findViewById(R.id.seeAllCategories);
+        seeAllProperties = view.findViewById(R.id.seeAllProperties);
+        btnFindAgents = view.findViewById(R.id.btnFindAgents);
 
+        seeAllCategories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), AllCategoryActivity.class).putExtra("activity","category"));
+
+            }
+        });
+        seeAllProperties.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), AllPostActivity.class));
+
+            }
+        });
         List<SlideModel> imageList = new ArrayList<>();
         imageList.add(new SlideModel("https://bit.ly/2YoJ77H", ScaleTypes.FIT));
         imageList.add(new SlideModel("https://bit.ly/2YoJ77H", ScaleTypes.FIT));
@@ -71,16 +93,13 @@ public class HomeFragments extends Fragment {
 
         imageSlider.setImageList(imageList);
 
-        btn_list_property = view.findViewById(R.id.btn_list_property);
-        btn_list_property.setOnClickListener(new View.OnClickListener() {
+        btnFindAgents.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
-//               getContext().getFragmentManager()
-//                        .beginTransaction()
-//                        .replace(R.id.framelayout, new SearchFragment())
-//                        .commit();
-////                startActivity(new Intent(getContext(), Filt.class));
+
+                 startActivity(new Intent(getContext(), FindAgentActivity.class));
+
             }
         });
 

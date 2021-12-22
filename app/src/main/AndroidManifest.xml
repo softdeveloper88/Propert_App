@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Propert_App">
         <activity
+            android:name=".activity.AllPostActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.AllCategoryActivity"
             android:exported="false" />
 
@@ -28,6 +31,9 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBuQSEKSqp2SJ9w8JTwtSn9-j1XpoNtDNI" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <activity
             android:name=".activity.add_property.AddPropertyDescription"
@@ -65,6 +71,7 @@
         <activity android:name=".activity.PropertyFilterActivity" />
         <activity android:name=".activity.DashboardActivity" />
         <activity android:name=".activity.user.SignUpActivity" />
+        <activity android:name=".activity.AllProperties" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
